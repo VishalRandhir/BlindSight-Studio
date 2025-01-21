@@ -16,7 +16,10 @@
 </head>
 
 <body>
-    <div id="main" class="cursor-crosshair">
+    <div class="flex lg:hidden h-[100vh] w-[100vw] justify-center align-center">
+        <h1 class="text-xl font-bold">Please use Desktop, This website only support Desktop</h1>
+    </div>
+    <div id="main" class="cursor-crosshair md:hidden sm:hidden xs:hidden lg:block">
         <div id="cursor"></div>
         <audio id="myAudio">
             <source src="./click.mp3" type="audio/mpeg">
