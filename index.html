@@ -16,10 +16,8 @@
 </head>
 
 <body>
-    <div class="block lg:hidden xl:hidden 2xl:hidden h-[100vh] w-[100vw]">
-        <h1 class="text-xl font-bold flex justify-center items-center text-white h-[100vh]">Please use Desktop, This website only support Desktop</h1>
-    </div>
-    <div id="main" class="cursor-crosshair hidden lg:block xl:block 2xl:block">
+    
+    <div id="main" class="cursor-crosshair">
         <div id="cursor"></div>
         <audio id="myAudio">
             <source src="./click.mp3" type="audio/mpeg">
@@ -29,7 +27,7 @@
                 <div class="box text-center"><span class="font-bold">$</span>tudio</div>
                 <div class="box col-span-7 font-bold">BLINDSIGHT.STUDIO</div>
             </div>
-            <ul class="grid grid-cols-4 text-center font-semibold">
+            <ul class="lg:grid hidden grid-cols-4 text-center font-semibold">
                 <li class="box">Work</li>
                 <li class="box">Play</li>
                 <li class="box">About</li>
@@ -38,7 +36,7 @@
         </nav>
 
         <section class="bg-[#222] h-[100vh] grid grid-cols-3 mt-[-10px]">
-            <div class="box h-[100%] flex justify-center items-center"><img id="img" width="400px"
+            <div class="box h-[100%] flex lg:flex-row md:flex-col justify-center items-center"><img id="img" width="400px"
                     src="./ImageSec1.gif" /></div>
             <div class="box h-[100%] col-span-2 flex flex-col justify-center items-center">
                 <h1 class="text-7xl font-bold text-zinc-700 w-[500px]">BLINDSIGHT<br /> STUDIO</h1>
@@ -48,9 +46,9 @@
             </div>
         </section>
 
-        <section class="bg-[#222] h-[60vh] grid grid-cols-3">
+        <section class="bg-[#222] h-[60vh] grid lg:grid-cols-3 grid-rows-3">
             <div class="box h-[100%] flex flex-col gap-10">
-                <p>Reac the <br />latest case</p>
+                <p>Read the <br />latest case</p>
                 <div class="">
                     <h1 class="text-4xl font-bold text-zinc-700 ">Concordium</h1>
                     <div class="rounded-[10px] overflow-hidden h-[250px] w-[450px] bg-red-400"><img
@@ -94,7 +92,7 @@
             </div>
         </section>
 
-        <section class="bg-[#222] h-[120vh] grid grid-cols-2">
+        <section class="bg-[#222] h-[120vh] grid lg:grid-cols-2 grid-rows-2">
             <div class="box h-[100%] row-span-3 flex flex-col justify-center items-center">
                 <h1 class="text-8xl font-bold text-zinc-700 w-[500px]">About</h1><br /><br />
                 <p class="text-lg text-zinc-700 w-[500px]">Digital Product Design is a set of tools used to solve
